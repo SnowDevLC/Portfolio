@@ -1,7 +1,3 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
 @font-face {
   font-family: 'Neue Montreal';
   src: url('./assets/NeueMontreal-Regular.otf');
@@ -21,6 +17,17 @@
   -webkit-text-size-adjust: 100%;
 }
 
+* {
+  box-sizing: border-box;
+}
+
+a {
+  color: #F2F2F2;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+}
 /* @media (prefers-color-scheme: light) {
   :root {
     color: #213547;
