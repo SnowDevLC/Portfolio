@@ -1,0 +1,22 @@
+[
+    {
+      "name": "DescuentosYA!",
+      "description": "DescuentosYA es una plataforma que conecta empresas y socios de clubes, brindando acceso sencillo a descuentos exclusivos.",
+      "skills": ["JavaScript", "Next.js", "React.js", "Node.js", "Prisma", "Express.js", "Tailwind", "HTML"],
+      "company": "Henry",
+      "age": 2023,
+      "github": "https://github.com/CebrasDevs/DescuentosYa",
+      "link": "https://descuentos-ya.vercel.app/",
+      "image": "https://res.cloudinary.com/dwndzlcxp/image/upload/v1698101294/descuentosYa_ljqcwb.png"
+    },
+    {
+      "name": "Countries",
+      "description": "SPA sobre una temática de países para poner en práctica todo lo aprendido.",
+      "skills": ["JavaScript", "React.js", "Node.js", "PostgreSQL", "Express.js", "CSS", "HTML"],
+      "company": "Henry",
+      "age": 2023,
+      "github": "https://github.com/SnowDevLC/Projects/tree/main/Countries-APP",
+      "link": "https://countries-sd.vercel.app/",
+      "image": ""
+    }
+]

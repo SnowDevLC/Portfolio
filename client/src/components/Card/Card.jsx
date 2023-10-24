@@ -1,18 +1,22 @@
+/* eslint-disable react/prop-types */
 import style from "./Card.module.css";
 import { BsArrowRight } from "react-icons/bs";
 
-export default function Card() {
+export default function Card({project}) {
+    const {name, description, company, age, link, image} = project;
     return (
         <div className={style.cardOutline}>
-            <a href="" className={style.card}>
+            <a href={link} target="blank" className={style.card}>
                 <div className={style.top}>
                     <div className={style.titleRow}>
-                        <h2 className={style.title}>Descuentos Ya!</h2>
+                        <h2 className={style.title}>{name}</h2>
                         <BsArrowRight size={30}/>
                     </div>
-                    <h4 className={style.description}>Henry, 2023 - Aplicacion de descuentos</h4>
+                    <div className={style.description}>
+                        <span className={style.company}>{company}, {age}&nbsp;</span>- {description}
+                    </div>
                 </div>
-                <img src="" alt="" />
+                <img src={image} alt="" className={style.image}/>
                 <div className={style.bgColor}></div>
             </a>
         </div>
