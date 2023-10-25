@@ -23,10 +23,10 @@ export default function NavBar() {
                     <div className={style.navMiddle}>
                         <div className={style.navButtons}>
                             <a className={style.navToggle} href="/">
-                                Work
-                            </a>
-                            <a className={style.navToggle} href="/info">
                                 Info
+                            </a>
+                            <a className={style.navToggle} href="/projects">
+                                Proyectos
                             </a>
                         </div>
                     </div>

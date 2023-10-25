@@ -1,9 +1,8 @@
-import { Projects, NavBar } from "../components";
+import { Projects } from "../components";
 
 export default function Work() {
     return (
         <div>
-            <NavBar />
             <Projects />
         </div>
     );

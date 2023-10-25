@@ -17,11 +17,23 @@
     position: relative;
 }
 
+@media screen and (max-width: 767px) {
+    .projects {
+        padding-top: 184px; /*MODIFICAR DESPUES CUANDO HEADER-QUEDA EN 48PX*/
+        padding-left: 24px;
+        padding-right: 24px;
+    }
+}
 
-@media screen and (min-width: 991px) {
-  .container {
-      width: auto;
-  }
+@media screen and (max-width: 991px) {
+    .projects {
+        align-items: stretch;
+        padding-left: 48px;
+        padding-right: 48px;
+    }
+    .container {
+        width: auto;
+    }
 }
 
 @media screen and (min-width: 1440px) {
@@ -31,8 +43,8 @@
 }
 
 @media screen and (min-width: 1920px) {
-  .container {
-      width: 1440px;
-      row-gap: 80px;
-  }
+    .container {
+        width: 1440px;
+        row-gap: 80px;
+    }
 }

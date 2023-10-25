@@ -62,7 +62,7 @@
 }
 
 .navMiddle {
-    width: 180px;
+    width: 220px;
     height: 56px;
     display: flex;
     flex-direction: column;
@@ -70,7 +70,7 @@
     position: relative;
 }
 .navButtons {
-    width: 180px;
+    width: 220px;
     height: 48px;
     display: flex;
     position: relative;
@@ -87,7 +87,7 @@
     transition: box-shadow 1s cubic-bezier(0.23, 1, 0.32, 1), border 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
 .navToggle {
-    width: 80px;
+    width: 100px;
     height: 36px;
     display: flex;
     text-align: center;

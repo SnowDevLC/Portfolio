@@ -1,12 +1,23 @@
 .cardOutline {
     outline-offset: -1px;
-    background-color: rgba(242, 242, 242, 0.04);
+    background-color: rgba(242, 242, 242, .04);
     border-radius: 24px;
-    outline: 1px solid rgba(122, 2, 2, 0.05);
+    outline: 1px solid rgba(242, 242, 242, .05);
     align-self: stretch;
     padding: 8px;
     position: relative;
-    /* box-shadow: 0 40px 80px rgb(0, 0, 0); */
+    /* box-shadow: 0 40px 80px rgba(0, 0, 0, .5); */
+}
+
+.topLight {
+    z-index: 1;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0) 5%, rgba(255, 255, 255, .8) 35%, #fff 50%, rgba(255, 255, 255, .8) 65%, rgba(0, 0, 0, 0) 95%);
+    position: absolute;
+    top: 0%;
+    bottom: auto;
+    left: 0%;
+    right: 0%;
+    height: 1px;
 }
 
 .card {
@@ -50,6 +61,11 @@
     line-height: 100%;
     text-shadow: 0 -2px 10px rgba(255, 255, 255, .2);
 }
+.arrow {
+    width: 32px;
+    height: 32px;
+    transition: transform 0.3s ease-in-out;
+}
 
 .company {
     color: rgba(242, 242, 242, .8);
@@ -69,22 +85,64 @@
 .image {
     z-index: 1;
     max-width: 90%;
+    min-height: 90%;
     align-self: center;
     position: relative;
     box-shadow: 0 40px 50px 10px rgba(0, 0, 0, .25);
-    border-radius: 24px;
+    border-top-right-radius: 14px;
+    border-top-left-radius: 14px;
+    transition: transform 0.3s ease-in-out;
 }
 
-img {
-    vertical-align: middle;
-    display: inline-block;
-    border: 0;
+.bgColor {
+    z-index: 0;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    background-image: radial-gradient(circle at 50% 0, rgb(124, 58, 237, 0.2), rgba(0, 0, 0, 0) 80%), radial-gradient(circle at 50% 0, rgb(124, 58, 237, 0.2), rgba(0, 0, 0, 0));
+    position: absolute;
+    top: 0%;
+    bottom: 0%;
+    left: 0%;
+    right: 0%;
 }
 
-.card:hover {
-    background-image: radial-gradient(circle at 50% 0, rgba(127, 207, 255, .2), rgba(0, 0, 0, 0) 80%), radial-gradient(circle at 50% 0, #035, rgba(0, 0, 0, 0));
-    transition: all 3s;
+.card:hover{
+    outline: 0;
+    border-color: #888;
 }
+.card:hover .bgColor{
+    opacity: 1;
+}
+.card:hover .arrow{
+    transform: translate3d(10px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+    transform-style: preserve-3d;
+}
+.card:hover .image{
+    transform: translate3d(0px, -24px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+    transform-style: preserve-3d;
+}
+
+@media screen and (max-width: 1440px) {
+    .image {
+        border-top-right-radius: 10px;
+        border-top-left-radius: 10px;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .card {
+        height: auto;
+    }
+    .card:hover .image{
+        transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+        transform-style: preserve-3d;
+    }
+    .image {
+        border-top-right-radius: 6px;
+        border-top-left-radius: 6px;
+    }
+}
+
 
 @media screen and (min-width: 1440px) {
     .card {
@@ -118,8 +176,13 @@ img {
     .title {
         font-size: 32px;
     }
+    .arrow {
+        width: 48px;
+        height: 48px;
+    }
     .description {
         font-size: 18px;
         line-height: 26px;
     }
+    
 }
