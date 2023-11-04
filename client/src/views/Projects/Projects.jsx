@@ -1,4 +1,4 @@
-import { Card } from "../index.js";
+import { Card } from "../../components/index.js";
 import style from './Projects.module.css';
 
 import projects from "../../utils/db.json";

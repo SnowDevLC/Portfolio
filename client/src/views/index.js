@@ -1,5 +1,5 @@
-import Info from './Info';
-import Work from './Work';
+import About from './About/About';
+import Projects from './Projects/Projects';
 import Detail from './Detail';
 
-export { Info, Work, Detail };
+export { About, Projects, Detail };

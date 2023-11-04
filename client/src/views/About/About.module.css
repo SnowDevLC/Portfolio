@@ -1,0 +1,210 @@
+.about {
+    display: flex;
+    flex-direction: column;
+    row-gap: 80px;
+    align-items: center;
+    padding-top: 184px;
+    padding-bottom: 200px;
+    position: relative;
+}
+
+.container {
+    width: 882px;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    row-gap: 48px;
+    position: relative;
+}
+
+.cardOutline {
+    outline-offset: -1px;
+    background-color: rgba(242, 242, 242, 0.04);
+    border-radius: 24px;
+    outline: 1px solid rgba(242, 242, 242, 0.05);
+    align-self: stretch;
+    padding: 8px;
+    position: relative;
+    /* box-shadow: 0 40px 80px rgba(0, 0, 0, .5); */
+}
+
+.topLight {
+    z-index: 1;
+    background-image: linear-gradient(
+        to right,
+        rgba(0, 0, 0, 0) 5%,
+        rgba(255, 255, 255, 0.8) 35%,
+        #fff 50%,
+        rgba(255, 255, 255, 0.8) 65%,
+        rgba(0, 0, 0, 0) 95%
+    );
+    position: absolute;
+    top: 0%;
+    bottom: auto;
+    left: 0%;
+    right: 0%;
+    height: 1px;
+}
+
+.card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("https://i.imgur.com/xCorg9F.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  opacity: 0.8;
+  z-index: -1;
+  border-radius: 16px;
+}
+.card {
+  height: 588px;
+  grid-row-gap: 56px;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #f2f2f2;
+  border: 1px solid #3d3d3d;
+  border-radius: 16px;
+  flex-direction: column;
+  padding-top: 32px;
+  padding-left: 28px;
+  padding-right: 28px;
+  text-decoration: none;
+  display: flex;
+  position: relative;
+  overflow: hidden;
+}
+
+.title {
+    font-size: 40px;
+    background-image: linear-gradient(135deg, #ffe500, #ad00ff, #0075ff);
+    animation: _gradient-animation 4s infinite linear;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    text-align: center;
+}
+@keyframes _gradient-animation {
+    0% {
+        background-image: linear-gradient(135deg, #ffe500, #ad00ff, #0075ff);
+    }
+    5% {
+        background-image: linear-gradient(135deg, #ffdc3a, #9c0cff, #1a80e6);
+    }
+    10% {
+        background-image: linear-gradient(135deg, #ffc973, #8a17ff, #338bcc);
+    }
+    15% {
+        background-image: linear-gradient(135deg, #ffb0ad, #7923ff, #4d97b3);
+    }
+    20% {
+        background-image: linear-gradient(135deg, #ff99e6, #682fff, #66a299);
+    }
+    25% {
+        background-image: linear-gradient(135deg, #ff81ff, #573bff, #80ad80);
+    }
+    30% {
+        background-image: linear-gradient(135deg, #ff69ff, #4546ff, #99b866);
+    }
+    35% {
+        background-image: linear-gradient(135deg, #ff50ff, #3452ff, #b3c34c);
+    }
+    40% {
+        background-image: linear-gradient(135deg, #ff38ff, #235eff, #cccf33);
+    }
+    45% {
+        background-image: linear-gradient(135deg, #ff1fff, #1169ff, #e6da1a);
+    }
+    50% {
+        background-image: linear-gradient(135deg, #ff06ff, #0075ff, #ffe500);
+    }
+    55% {
+        background-image: linear-gradient(135deg, #ff06ff, #1169ff, #e6da1a);
+    }
+    60% {
+        background-image: linear-gradient(135deg, #ff1fff, #235eff, #cccf33);
+    }
+    65% {
+        background-image: linear-gradient(135deg, #ff38ff, #3452ff, #b3c34c);
+    }
+    70% {
+        background-image: linear-gradient(135deg, #ff50ff, #4546ff, #99b866);
+    }
+    75% {
+        background-image: linear-gradient(135deg, #ff69ff, #573bff, #80ad80);
+    }
+    80% {
+        background-image: linear-gradient(135deg, #ff81ff, #682fff, #66a299);
+    }
+    85% {
+        background-image: linear-gradient(135deg, #ff99e6, #7923ff, #4d97b3);
+    }
+    90% {
+        background-image: linear-gradient(135deg, #ffb0ad, #8a17ff, #338bcc);
+    }
+    95% {
+        background-image: linear-gradient(135deg, #ffc973, #9c0cff, #1a80e6);
+    }
+    100% {
+        background-image: linear-gradient(135deg, #ffdc3a, #ad00ff, #0075ff);
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .about {
+        padding-top: 184px;
+        padding-left: 24px;
+        padding-right: 24px;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .about {
+        align-items: stretch;
+        padding-left: 48px;
+        padding-right: 48px;
+    }
+    .container {
+        width: auto;
+    }
+    .card {
+        height: auto;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .container {
+        width: 1044px;
+    }
+    .card {
+        height: 696px;
+        grid-row-gap: 64px;
+        padding-top: 36px;
+        padding-left: 32px;
+        padding-right: 32px;
+    }
+}
+
+@media screen and (min-width: 1920px) {
+    .container {
+        width: 1440px;
+        row-gap: 80px;
+    }
+    .cardOutline {
+        border-radius: 36px;
+        padding: 12px;
+    }
+    .card {
+        height: 960px;
+        grid-row-gap: 88px;
+        border-radius: 24px;
+        padding-top: 44px;
+        padding-left: 44px;
+        padding-right: 44px;
+    }
+    .top {
+        row-gap: 18px;
+    }
+}
