@@ -7,7 +7,7 @@ export default function Card({project}) {
     const {name, description, company, age, link, image} = project;
     
     return (
-        <div className={style.cardOutline}>
+        <article className={style.cardOutline}>
             <div className={style.topLight}></div>
             <a href={link} target="blank" className={`${style.card} ${style.inBlock}`}>
                 <div className={style.topLight}></div>
@@ -23,6 +23,6 @@ export default function Card({project}) {
                 <img src={image} alt="" className={style.image} />
                 <div className={style.bgColor}></div>
             </a>
-        </div>
+        </article>
     );
 }

@@ -8,7 +8,7 @@ export default function NavBar() {
     const [isOpen, setIsOpen] = useState(false);
 
     return (
-        <>
+        <nav>
             <div className={style.sectionNav}>
                 <div className={style.navBar}>
                     <div className={style.navLeft}>
@@ -78,6 +78,6 @@ export default function NavBar() {
                     <BsArrowUpRight />
                 </a>
             </div>
-        </>
+        </nav>
     );
 }
