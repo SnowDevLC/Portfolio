@@ -31,6 +31,7 @@
 .logoBlock {
     display: flex;
     column-gap: 6px;
+    text-decoration: none;
 }
 .logo {
     color: #f2f2f2;
@@ -100,6 +101,10 @@
 }
 .navToggle:hover {
     background-color: rgba(242, 242, 242, 0.05);
+}
+.active {
+    background-color: rgba(242, 242, 242, 0.05);
+    cursor: default;
 }
 
 .navRight {
@@ -251,6 +256,12 @@
     .popupMenu {
         top: 84px;
         right: 16px;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .logoBlock {
+        display: none;
     }
 }
 

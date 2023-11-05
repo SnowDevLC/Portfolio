@@ -7,7 +7,19 @@
     padding-bottom: 200px;
     position: relative;
     z-index: 1;
-    background-image: radial-gradient(circle closest-corner at 50% 0, rgba(242, 242, 242, .15), rgba(0, 0, 0, 0));
+    background-image: radial-gradient(circle closest-corner at 50% 0, rgba(242, 242, 242, 0.15), rgba(0, 0, 0, 0));
+}
+
+.aboutMobile {
+    display: none;
+}
+
+.point {
+    width: 10px;
+    height: 10px;
+    background-color: #f2f2f2;
+    border-radius: 50%;
+    box-shadow: 0 0 20px #fff;
 }
 
 .container {
@@ -99,7 +111,6 @@
     text-align: right;
 }
 
-
 @media screen and (max-width: 991px) {
     .about {
         align-items: stretch;
@@ -132,6 +143,78 @@
     }
     .textContent {
         padding-bottom: 20vw;
+    }
+}
+
+@media screen and (max-width: 499px) {
+    .about {
+        display: none;
+    }
+    .aboutMobile {
+        grid-row-gap: 10vh;
+        background-image: radial-gradient(
+            circle farthest-side at 50% 0,
+            rgba(242, 242, 242, 0.25),
+            rgba(0, 0, 0, 0) 80%
+        );
+        flex-direction: column;
+        align-items: stretch;
+        padding: 20vh 16px 6vh;
+        display: flex;
+        position: relative;
+    }
+    .containerMobile {
+        z-index: 1;
+        grid-row-gap: 6vh;
+        flex-direction: column;
+        padding-left: 8px;
+        padding-right: 8px;
+        display: flex;
+        position: relative;
+    }
+    .topMobile {
+        z-index: 1;
+        grid-row-gap: 3vh;
+        flex-direction: column;
+        align-items: flex-start;
+        display: flex;
+        position: relative;
+    }
+    .name {
+        grid-column-gap: 12px;
+        align-self: flex-start;
+        align-items: center;
+        display: flex;
+    }
+    .name h3 {
+        color: rgba(242, 242, 242, 0.5);
+        font-size: 16px;
+        font-weight: 500;
+        display: block;
+    }
+    .title h1 {
+        font-size: 8vw;
+        line-height: 8vw;
+        text-shadow: 0 5px 15px rgba(0, 87, 255, 0.25), 0 -5px 15px rgba(255, 90, 0, 0.2),
+            0 0 30px rgba(255, 255, 255, 0.4);
+    }
+    .description h3 {
+        font-size: 5vw;
+        font-weight: 500;
+        line-height: 140%;
+    }
+    .bottomMobile {
+        z-index: 1;
+        align-items: flex-start;
+        display: flex;
+        position: relative;
+    }
+    .divider {
+        width: 100%;
+        height: 1px;
+        background-color: rgba(242, 242, 242, 0.1);
+        padding-bottom: 0;
+        padding-right: 0;
     }
 }
 
@@ -168,7 +251,7 @@
         height: 960px;
         border-radius: 24px;
     }
-    .textContent{
+    .textContent {
         padding: 120px 88px 280px;
     }
     .title h1 {

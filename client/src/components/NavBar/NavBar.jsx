@@ -2,32 +2,44 @@ import { BsArrowUpRight, BsFileCodeFill } from "react-icons/bs";
 import { FiLink } from "react-icons/fi";
 import { VscChromeClose } from "react-icons/vsc";
 import style from "./NavBar.module.css";
-import { useState } from "react";
+import { useEffect, useState } from "react";
+import { Link, useLocation } from "react-router-dom";
 
 export default function NavBar() {
     const [isOpen, setIsOpen] = useState(false);
+    const [isActive, setIsActive] = useState({ about: true, project: false });
+    const location = useLocation();
+
+    useEffect(() => {
+        if (location.pathname === "/") {
+            setIsActive({about: true, project: false});
+        }
+        else if (location.pathname === "/projects"){
+            setIsActive({about: false, project: true});
+        }
+      }, [location.pathname]);
 
     return (
         <nav>
             <div className={style.sectionNav}>
                 <div className={style.navBar}>
                     <div className={style.navLeft}>
-                        <div className={style.logoBlock}>
+                        <Link to="/" className={style.logoBlock}>
                             <BsFileCodeFill className={style.logo} />
                             <div className={style.logoText}>
                                 <h2 className={style.textLogo}>Luis Canales</h2>
                                 <h3 className={style.underTextLogo}>FullStack Developer</h3>
                             </div>
-                        </div>
+                        </Link>
                     </div>
                     <div className={style.navMiddle}>
                         <div className={style.navButtons}>
-                            <a className={style.navToggle} href="/">
+                            <Link className={`${style.navToggle} ${isActive.about && style.active}`} to="/">
                                 Sobre Mí
-                            </a>
-                            <a className={style.navToggle} href="/projects">
+                            </Link>
+                            <Link className={`${style.navToggle} ${isActive.project && style.active}`} to="/projects">
                                 Proyectos
-                            </a>
+                            </Link>
                         </div>
                     </div>
                     <div className={style.navRight}>
