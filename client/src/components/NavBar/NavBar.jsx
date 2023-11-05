@@ -48,14 +48,14 @@ export default function NavBar() {
                                 LinkedIn
                                 <BsArrowUpRight />
                             </a>
-                            <a className={style.social} href="https://github.com/SnowDevLC" target="blank">
+                            <a className={style.social} href="https://github.com/SnowDevLC" target="__blank">
                                 GitHub
                                 <BsArrowUpRight />
                             </a>
                             <a
                                 className={style.social}
                                 href="https://drive.google.com/file/d/1HI6tna5YOVspn_lPmQGycFrLtUzFVNDr/view?usp=share_link"
-                                target="blank"
+                                target="___blank"
                             >
                                 CV
                                 <BsArrowUpRight />
