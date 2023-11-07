@@ -1,9 +1,11 @@
 :root {
   font-family: Raleway;
+  --main-bg-color: #101010;
+  --main-text-color: #F2F2F2;
 
   color-scheme: light dark;
-  color: #F2F2F2;
-  background-color: #101010;
+  color: var(--main-text-color);
+  background-color: var(--main-bg-color);
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -19,7 +21,7 @@
 
 a {
   text-decoration: none;
-  color: #F2F2F2;
+  color: var(--main-text-color);
 }
 
 h1, h2, h3, h4, h5, h6 {

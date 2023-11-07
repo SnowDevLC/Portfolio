@@ -4,12 +4,12 @@ import { BsArrowRight } from "react-icons/bs";
 
 export default function Card({project}) {
     
-    const {name, description, company, age, link, image} = project;
+    const {name, description, company, age, github, image} = project;
     
     return (
         <article className={style.cardOutline}>
             <div className={style.topLight}></div>
-            <a href={link} target="blank" className={`${style.card} ${style.inBlock}`}>
+            <a href={github} target="blank" className={`${style.card} ${style.inBlock}`}>
                 <div className={style.topLight}></div>
                 <div className={style.top}>
                     <div className={style.titleRow}>
