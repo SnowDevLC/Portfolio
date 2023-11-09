@@ -7,7 +7,8 @@
       "age": 2023,
       "github": "https://github.com/CebrasDevs/DescuentosYa",
       "link": "https://descuentos-ya.vercel.app/",
-      "image": "https://i.imgur.com/DVyZzCX.png"
+      "image": "https://i.imgur.com/DVyZzCX.png",
+      "bgColor": "radial-gradient(circle at 50% 0, rgb(124, 58, 237, 0.2), rgba(0, 0, 0, 0) 80%), radial-gradient(circle at 50% 0, rgb(124, 58, 237, 0.2), rgba(0, 0, 0, 0))"
     },
     {
       "name": "Countries",
@@ -17,6 +18,7 @@
       "age": 2023,
       "github": "https://github.com/SnowDevLC/Projects/tree/main/Countries-APP",
       "link": "https://countries-sd.vercel.app/",
-      "image": "https://i.imgur.com/j3Whlxz.png"
+      "image": "https://i.imgur.com/j3Whlxz.png",
+      "bgColor": "radial-gradient(circle at 50% 0, rgb(53, 128, 187, 0.2), rgba(0, 0, 0, 0) 80%), radial-gradient(circle at 50% 0, rgb(53, 128, 187, 0.2), rgba(0, 0, 0, 0))"
     }
 ]

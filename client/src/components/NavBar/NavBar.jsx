@@ -19,6 +19,10 @@ export default function NavBar() {
         }
       }, [location.pathname]);
 
+    const handleScrollTop = () => {
+        window.scrollTo(0, 0);
+    };
+
     return (
         <nav>
             <div className={style.sectionNav}>
@@ -34,10 +38,10 @@ export default function NavBar() {
                     </div>
                     <div className={style.navMiddle}>
                         <div className={style.navButtons}>
-                            <Link className={`${style.navToggle} ${isActive.about && style.active}`} to="/">
+                            <Link className={`${style.navToggle} ${isActive.about ? style.active : style.navToggleAbout}`} to="/" onClick={handleScrollTop} >
                                 Sobre Mí
                             </Link>
-                            <Link className={`${style.navToggle} ${isActive.project && style.active}`} to="/projects">
+                            <Link className={`${style.navToggle} ${isActive.project ? style.active : style.navToggleProject}`} to="/projects" onClick={handleScrollTop} >
                                 Proyectos
                             </Link>
                         </div>
@@ -61,14 +65,13 @@ export default function NavBar() {
                                 <BsArrowUpRight />
                             </a>
                         </div>
-                        <a
-                            href="#"
+                        <button
                             className={`${style.menuSocial} ${isOpen && style.open}`}
                             onClick={() => setIsOpen(!isOpen)}
                         >
                             <FiLink size={28} className={`${style.popupOpen} ${isOpen && style.open}`} />
                             <VscChromeClose size={30} className={`${style.popupClose} ${isOpen && style.open}`} />
-                        </a>
+                        </button>
                     </div>
                 </div>
             </div>

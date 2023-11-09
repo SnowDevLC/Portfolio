@@ -64,6 +64,7 @@ label {
     align-items: center;
     align-self: stretch;
     font-weight: 600;
+    font-size: 18px;
 }
 
 .footerBottom {
@@ -101,7 +102,7 @@ span {
         column-gap: 32px;
     }
     .links {
-        width: 80px;
+        width: 100px;
     }
     .footerBottom {
         column-gap: 30px;

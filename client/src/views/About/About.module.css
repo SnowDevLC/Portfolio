@@ -1,10 +1,14 @@
+.mainContainer {
+    padding-bottom: 100px;
+}
+
 .about {
     display: flex;
     flex-direction: column;
     row-gap: 80px;
     align-items: center;
     padding-top: 160px;
-    padding-bottom: 200px;
+    padding-bottom: 50px;
     position: relative;
     z-index: 1;
     background-image: radial-gradient(circle closest-corner at 50% 0, rgba(242, 242, 242, 0.15), rgba(0, 0, 0, 0));
@@ -110,6 +114,145 @@
     text-align: right;
 }
 
+.aboutMobile {
+    grid-row-gap: 7vh;
+    background-image: radial-gradient(circle farthest-side at 50% 0, rgba(242, 242, 242, 0.25), rgba(0, 0, 0, 0) 80%);
+    flex-direction: column;
+    align-items: stretch;
+    padding: 15vh 16px 32px;
+    display: none;
+    position: relative;
+}
+.containerMobile {
+    z-index: 1;
+    grid-row-gap: 6vh;
+    flex-direction: column;
+    padding-left: 8px;
+    padding-right: 8px;
+    display: flex;
+    position: relative;
+}
+.topMobile {
+    z-index: 1;
+    grid-row-gap: 3vh;
+    flex-direction: column;
+    align-items: flex-start;
+    display: flex;
+    position: relative;
+}
+.name {
+    grid-column-gap: 12px;
+    align-self: flex-start;
+    align-items: center;
+    display: flex;
+}
+.name h3 {
+    color: rgba(242, 242, 242, 0.5);
+    font-size: 16px;
+    font-weight: 500;
+    display: block;
+}
+
+.divider {
+    width: 100%;
+    height: 1px;
+    background-color: rgba(242, 242, 242, 0.1);
+    padding-bottom: 0;
+    padding-right: 0;
+}
+
+.studies {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    display: flex;
+}
+
+.studiesContainer {
+    z-index: 1;
+    width: 882px;
+    row-gap: 50px;
+    flex-direction: column;
+    display: flex;
+    position: relative;
+}
+
+.studiesContent {
+    row-gap: 64px;
+    flex-direction: column;
+    align-items: flex-start;
+    display: flex;
+}
+
+.columns {
+    column-gap: 48px;
+    row-gap: 16px;
+    grid-template-rows: auto;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-columns: 1fr;
+    justify-content: space-between;
+    align-self: stretch;
+    align-items: baseline;
+    display: grid;
+}
+
+.studies h2 {
+    letter-spacing: -0.1px;
+    text-shadow: 0 0 20px rgba(255, 255, 255, 0.2), 0 -6px 15px rgba(255, 90, 0, 0.1), 0 5px 15px rgba(0, 87, 255, 0.25);
+    font-size: 40px;
+    font-weight: 500;
+    line-height: 125%;
+}
+
+.descriptionBlock {
+    row-gap: 20px;
+    flex-direction: column;
+    display: flex;
+}
+
+.position {
+    row-gap: 8px;
+    flex-direction: column;
+    display: flex;
+}
+
+.position h4 {
+    letter-spacing: 0.1px;
+    flex: 0 auto;
+    padding-right: 24px;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 125%;
+}
+
+.position label {
+    color: rgba(242, 242, 242, 0.4);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 125%;
+}
+
+.studies p {
+    color: rgba(242, 242, 242, .6);
+    letter-spacing: .4px;
+    flex: 1;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 150%;
+}
+
+.skillsContent {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    padding-bottom: 50px;
+}
+.logo {
+    height: 80px;
+    width: 80px;
+    filter: drop-shadow( 0 0 5px #fff);
+}
+
 @media screen and (max-width: 991px) {
     .about {
         align-items: stretch;
@@ -132,6 +275,17 @@
     .description h3 {
         font-size: 3vw;
     }
+    .studies {
+        padding-left: 48px;
+        padding-right: 48px;
+    }
+    .studiesContainer {
+        width: auto;
+        align-self: stretch;
+    }
+    .columns {
+        column-gap: 32px;
+    }
 }
 
 @media screen and (max-width: 767px) {
@@ -143,6 +297,46 @@
     .textContent {
         padding-bottom: 20vw;
     }
+    .studies {
+        align-items: stretch;
+        padding-left: 24px;
+        padding-right: 24px;
+    }
+    .studiesContainer {
+        row-gap: 32px;
+    }
+    .studiesContent {
+        row-gap: 64px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .columns {
+        row-gap: 16px;
+        grid-template-rows: auto auto;
+        grid-template-columns: 1fr;
+    }
+    .studies h2 {
+        letter-spacing: -.75px;
+        font-size: 32px;
+        line-height: 40px;
+    }
+    
+    .position {
+        row-gap: 4px;
+    }
+    
+    .studies p {
+        font-size: 15px;
+    }
+
+    .skillsContent {
+        flex-wrap: wrap;  
+    }
+    .logo {
+        height: 50px;
+        width: 50px;
+    }
 }
 
 @media screen and (max-width: 499px) {
@@ -150,46 +344,7 @@
         display: none;
     }
     .aboutMobile {
-        grid-row-gap: 10vh;
-        background-image: radial-gradient(
-            circle farthest-side at 50% 0,
-            rgba(242, 242, 242, 0.25),
-            rgba(0, 0, 0, 0) 80%
-        );
-        flex-direction: column;
-        align-items: stretch;
-        padding: 20vh 16px 6vh;
         display: flex;
-        position: relative;
-    }
-    .containerMobile {
-        z-index: 1;
-        grid-row-gap: 6vh;
-        flex-direction: column;
-        padding-left: 8px;
-        padding-right: 8px;
-        display: flex;
-        position: relative;
-    }
-    .topMobile {
-        z-index: 1;
-        grid-row-gap: 3vh;
-        flex-direction: column;
-        align-items: flex-start;
-        display: flex;
-        position: relative;
-    }
-    .name {
-        grid-column-gap: 12px;
-        align-self: flex-start;
-        align-items: center;
-        display: flex;
-    }
-    .name h3 {
-        color: rgba(242, 242, 242, 0.5);
-        font-size: 16px;
-        font-weight: 500;
-        display: block;
     }
     .title h1 {
         font-size: 8vw;
@@ -207,13 +362,6 @@
         align-items: flex-start;
         display: flex;
         position: relative;
-    }
-    .divider {
-        width: 100%;
-        height: 1px;
-        background-color: rgba(242, 242, 242, 0.1);
-        padding-bottom: 0;
-        padding-right: 0;
     }
 }
 
@@ -235,6 +383,25 @@
     }
     .description h3 {
         font-size: 30px;
+    }
+    .studiesContainer {
+        width: 1040px;
+    }
+    .studiesContent {
+        row-gap: 72px;
+    }
+    .columns {
+        column-gap: 56px;
+    }
+
+    .descriptionBlock {
+        row-gap: 24px;
+    }
+    .position label {
+        font-size: 18px;
+    }
+    .studies p {
+        font-size: 18px;
     }
 }
 
@@ -260,5 +427,35 @@
     }
     .description h3 {
         font-size: 40px;
+    }
+    .studiesContainer {
+        width: 1440px;
+        row-gap: 64px;
+    }
+    .studiesContent {
+        row-gap: 80px;
+    }
+    .columns {
+        column-gap: 72px;
+    }
+    .studies h2 {
+        font-size: 48px;
+    }
+    
+    .position {
+        row-gap: 10px;
+    }
+    
+    .position h4 {
+        font-size: 32px;
+        line-height: 38px;
+    }
+    
+    .position label {
+        font-size: 20px;
+    }
+    
+    .studies p {
+        font-size: 20px;
     }
 }

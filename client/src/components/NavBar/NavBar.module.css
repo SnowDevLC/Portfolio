@@ -99,12 +99,14 @@
     text-decoration: none;
     transition: all 0.2s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
-.navToggle:hover {
-    background-color: rgba(242, 242, 242, 0.05);
+.navToggleAbout:hover {
+    background-image: linear-gradient(to left, rgba(0, 0, 0, 0), rgba(242, 242, 242, .05));
+}
+.navToggleProject:hover {
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(242, 242, 242, .05));
 }
 .active {
     background-color: rgba(242, 242, 242, 0.05);
-    cursor: default;
 }
 
 .navRight {
@@ -175,6 +177,7 @@
         border: 1px solid rgba(242, 242, 242, 0.1);
         transition: all 0.2s cubic-bezier(0.165, 0.84, 0.44, 1);
         box-shadow: 0 4px 15px rgba(0, 0, 0, 0.25);
+        cursor: pointer;
     }
     .menuSocial:hover {
         background-color: rgba(242, 242, 242, 0.08);
@@ -206,6 +209,7 @@
         display: flex;
     }
     .socialMenu {
+        font-weight: 600;
         height: 48px;
         display: flex;
         justify-content: space-between;

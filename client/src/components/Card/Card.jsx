@@ -4,7 +4,7 @@ import { BsArrowRight } from "react-icons/bs";
 
 export default function Card({project}) {
     
-    const {name, description, company, age, github, image} = project;
+    const {name, description, company, age, github, image, bgColor} = project;
     
     return (
         <article className={style.cardOutline}>
@@ -21,7 +21,7 @@ export default function Card({project}) {
                     </div>
                 </div>
                 <img src={image} alt="" className={style.image} />
-                <div className={style.bgColor}></div>
+                <div className={style.bgColor} style={{backgroundImage: bgColor}}></div>
             </a>
         </article>
     );

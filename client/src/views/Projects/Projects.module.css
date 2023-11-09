@@ -3,9 +3,10 @@
   flex-direction: column;
   row-gap: 80px;
   align-items: center;
-  padding-top: 184px; /*MODIFICAR DESPUES CUANDO HEADER-QUEDA EN 24PX*/
+  padding-top: 160px;
   padding-bottom: 200px;
   position: relative;
+  background-image: radial-gradient(circle closest-corner at 50% 0, rgba(242, 242, 242, 0.15), rgba(0, 0, 0, 0));
 }
 
 .container {
@@ -19,7 +20,7 @@
 
 @media screen and (max-width: 767px) {
   .projects {
-      padding-top: 184px; /*MODIFICAR DESPUES CUANDO HEADER-QUEDA EN 48PX*/
+      padding-top: 120px;
       padding-left: 24px;
       padding-right: 24px;
   }
