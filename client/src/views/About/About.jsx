@@ -19,7 +19,7 @@ export default function About() {
                                     </h1>
                                 </div>
                                 <div className={style.description}>
-                                    <h3>Formado en Henry & UNL.</h3>
+                                    <h3>Formado en Henry & UTN.</h3>
                                 </div>
                             </div>
                         </div>
@@ -55,17 +55,17 @@ export default function About() {
                         <h3>HABILIDADES</h3>
                     </div>
                     <div className={style.skillsContent}>
-                        <RiJavascriptFill className={style.logo}/>
-                        <SiNextdotjs className={style.logo}/>
-                        <RiReactjsFill className={style.logo}/>
-                        <SiRedux className={style.logo}/>
-                        <SiHtml5 className={style.logo}/>
-                        <SiCss3 className={style.logo}/>
-                        <SiTailwindcss className={style.logo}/>
-                        <SiNodedotjs className={style.logo}/>
-                        <SiPostgresql className={style.logo}/>
-                        <SiMongodb className={style.logo}/>
-                        <SiGit className={style.logo}/>
+                        <RiJavascriptFill className={style.logo} title="JavaScript"/>
+                        <SiNextdotjs className={style.logo} title="Next.js"/>
+                        <RiReactjsFill className={style.logo} title="React"/>
+                        <SiRedux className={style.logo} title="Redux"/>
+                        <SiHtml5 className={style.logo} title="HTML5"/>
+                        <SiCss3 className={style.logo} title="CSS3"/>
+                        <SiTailwindcss className={style.logo} title="Tailwind"/>
+                        <SiNodedotjs className={style.logo} title="Node.js"/>
+                        <SiPostgresql className={style.logo} title="PostgreSQL"/>
+                        <SiMongodb className={style.logo} title="MongoDB"/>
+                        <SiGit className={style.logo} title="Git"/>
                     </div>
                 </div>
             </section>
