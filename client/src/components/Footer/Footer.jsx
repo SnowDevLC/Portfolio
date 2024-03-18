@@ -45,7 +45,7 @@ export default function Footer() {
                 </div>
                 <div className={style.footerBottom}>
                     <span>© 2023 Luis Canales. Todos los Derechos Reservados.</span>
-                    <span className={style.update}>Última actualización por Luis Canales en Noviembre de 2023.</span>
+                    <span className={style.update}>Última actualización por Luis Canales en Marzo de 2024.</span>
                 </div>
             </div>
         </footer>

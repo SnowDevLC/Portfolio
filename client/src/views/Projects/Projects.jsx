@@ -1,7 +1,7 @@
 import { Card } from "../../components/index.js";
 import style from './Projects.module.css';
 
-import projects from "../../utils/db.json";
+import { projects } from "../../assets/db.js";
 
 export default function Projects() {
   return (
