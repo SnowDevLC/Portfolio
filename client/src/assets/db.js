@@ -1,13 +1,13 @@
 export const projects = [
   {
-    "name": "Municipalidad de La Paz",
+    "name": "Municipalidad de La Paz - Cordoba",
     "description": "Web oficial del municipio de La Paz donde encontraras toda la información, publicaciones y alojamientos de la localidad.",
     "skills": ["JavaScript", "React.js", "Node.js", "PostgreSQL", "CSS", "HTML"],
     "company": "Freelancer",
     "position": "Desarrollador FullStack",
     "age": 2024,
     "github": "https://github.com/SnowDevLC/Projects/tree/main/Countries-APP",
-    "deploy": "https://muni-la-paz.vercel.app/",
+    "deploy": "https://munilapazcba.gob.ar",
     "isDeploy": true,
     "image": "/projects/muni.webp",
     "bgColor": "radial-gradient(circle at 50% 0, rgb(0, 205, 55, 0.2), rgba(0, 0, 0, 0) 80%), radial-gradient(circle at 50% 0, rgb(0, 205, 55, 0.2), rgba(0, 0, 0, 0))"
