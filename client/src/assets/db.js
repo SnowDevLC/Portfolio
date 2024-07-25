@@ -42,16 +42,16 @@ export const projects = [
 
 export const studies = [
   {
-    "institution": "Henry",
-    "carrer": "Desarrollador FullStack",
-    "age": 2023,
-    "skill": "Dominar todas las fases del desarrollo web."
-  },
-  {
     "institution": "UTN",
     "carrer": "Progamación Web Inicial",
     "age": 2023,
     "skill": "Aprender los fundamentos tecnológicos centrales para llevar a cabo la producción de sitios web."
+  },
+  {
+    "institution": "Henry",
+    "carrer": "Desarrollador FullStack",
+    "age": 2023,
+    "skill": "Dominar todas las fases del desarrollo web."
   },
   {
     "institution": "UADER",

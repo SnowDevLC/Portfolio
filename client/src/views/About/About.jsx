@@ -30,7 +30,7 @@ export default function About() {
                   </h1>
                 </div>
                 <div className={style.description}>
-                  <h3>Formado en Henry & UTN.</h3>
+                  <h3>Formado en UADER & UTN.</h3>
                 </div>
               </div>
             </div>
@@ -53,7 +53,7 @@ export default function About() {
           </div>
           <div className={style.bottomMobile}>
             <div className={style.description}>
-              <h3>Formado en Henry & UTN.</h3>
+              <h3>Formado en UADER & UTN.</h3>
             </div>
           </div>
         </div>
