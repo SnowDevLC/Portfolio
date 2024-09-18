@@ -1,5 +1,18 @@
 export const projects = [
   {
+    "name": "Sistema de Gestión Integral",
+    "description": "Un sistema básico pero robusto para tener el control de tu negocio. Facturación, stock, clientes, cuentas corrientes, ventas, estadísticas y más.",
+    "skills": ["TypeScript", "Next.js", "React.js", "PostgreSQL", "Prisma", "Tailwind", "HTML"],
+    "company": "Freelancer",
+    "position": "Desarrollador FullStack - Proyecto Laboral",
+    "age": 2024,
+    "github": "https://github.com/SnowDevLC/",
+    "deploy": "https://melania.com.ar",
+    "isDeploy": false,
+    "image": "/projects/erp2.png",
+    "bgColor": "radial-gradient(circle at 50% 0, rgb(244, 114, 182, 0.2), rgba(0, 0, 0, 0) 80%), radial-gradient(circle at 50% 0, rgb(244, 114, 182, 0.2), rgba(0, 0, 0, 0))"
+  },
+  {
     "name": "Municipalidad de La Paz - Cordoba",
     "description": "Web oficial del municipio de La Paz donde se encuentra toda la información, publicaciones y alojamientos de la localidad.",
     "skills": ["JavaScript", "React.js", "Node.js", "PostgreSQL", "CSS", "HTML"],

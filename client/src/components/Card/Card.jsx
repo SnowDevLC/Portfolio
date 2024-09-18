@@ -1,7 +1,6 @@
 /* eslint-disable react/prop-types */
 import style from "./Card.module.css";
 import { BsArrowRight } from "react-icons/bs";
-import { RiJavascriptFill, RiReactjsFill } from "react-icons/ri";
 import {
   SiNextdotjs,
   SiRedux,
@@ -12,6 +11,10 @@ import {
   SiNodedotjs,
   SiPostgresql,
   SiMongodb,
+  SiPrisma,
+  SiTypescript,
+  SiJavascript,
+  SiReact
 } from "react-icons/si";
 
 export default function Card({ project }) {
@@ -43,14 +46,18 @@ export default function Card({ project }) {
                 skills.map(
                   (skill, index) =>
                     (skill === "JavaScript" && (
-                      <RiJavascriptFill key={index} className={style.logo} title="JavaScript" />
+                      <SiJavascript key={index} className={style.logo} title="JavaScript" />
+                    )) ||
+                    (skill === "TypeScript" && (
+                      <SiTypescript key={index} className={style.logo} title="TypeScript" />
                     )) ||
                     (skill === "Next.js" && <SiNextdotjs key={index} className={style.logo} title="Next.js" />) ||
-                    (skill === "React.js" && <RiReactjsFill key={index} className={style.logo} title="React" />) ||
+                    (skill === "React.js" && <SiReact key={index} className={style.logo} title="React" />) ||
                     (skill === "HTML" && <SiHtml5 key={index} className={style.logo} title="HTML5" />) ||
                     (skill === "CSS" && <SiCss3 key={index} className={style.logo} title="CSS3" />) ||
                     (skill === "Tailwind" && <SiTailwindcss key={index} className={style.logo} title="Tailwind" />) ||
                     (skill === "Node.js" && <SiNodedotjs key={index} className={style.logo} title="Node.js" />) ||
+                    (skill === "Prisma" && <SiPrisma key={index} className={style.logo} title="Prisma" />) ||
                     (skill === "PostgreSQL" && (
                       <SiPostgresql key={index} className={style.logo} title="PostgreSQL" />
                     )) || null

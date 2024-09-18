@@ -1,4 +1,3 @@
-import { RiJavascriptFill, RiReactjsFill } from "react-icons/ri";
 import {
   SiNextdotjs,
   SiRedux,
@@ -9,6 +8,11 @@ import {
   SiNodedotjs,
   SiPostgresql,
   SiMongodb,
+  SiPrisma,
+  SiTypescript,
+  SiJavascript,
+  SiReact,
+  SiPhp
 } from "react-icons/si";
 import { studies } from "../../assets/db.js";
 import style from "./About.module.css";
@@ -66,15 +70,18 @@ export default function About() {
             <h3>HABILIDADES</h3>
           </div>
           <div className={style.skillsContent}>
-            <RiJavascriptFill className={style.logo} title="JavaScript" />
+            <SiJavascript className={style.logo} title="JavaScript" />
+            <SiTypescript className={style.logo} title="TypeScript" />
             <SiNextdotjs className={style.logo} title="Next.js" />
-            <RiReactjsFill className={style.logo} title="React" />
+            <SiReact className={style.logo} title="React" />
             <SiRedux className={style.logo} title="Redux" />
             <SiHtml5 className={style.logo} title="HTML5" />
             <SiCss3 className={style.logo} title="CSS3" />
             <SiTailwindcss className={style.logo} title="Tailwind" />
             <SiNodedotjs className={style.logo} title="Node.js" />
+            <SiPhp className={style.logo} title="PHP" />
             <SiPostgresql className={style.logo} title="PostgreSQL" />
+            <SiPrisma className={style.logo} title="Prisma" />
             <SiMongodb className={style.logo} title="MongoDB" />
             <SiGit className={style.logo} title="Git" />
           </div>

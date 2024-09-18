@@ -58,7 +58,7 @@ export default function NavBar() {
                             </a>
                             <a
                                 className={style.social}
-                                href="https://drive.google.com/file/d/1GR6j6Xlmg9XYjInKLJ30fLf0EoMA3WZE/view?usp=drive_link"
+                                href="https://drive.google.com/file/d/1VOlQyyddYvIMmfYZBsgmIoZnpPUpjKi9/view?usp=drive_link"
                                 target="___blank"
                             >
                                 CV

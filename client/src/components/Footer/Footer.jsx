@@ -33,7 +33,7 @@ export default function Footer() {
                                 </a>
                                 <a
                                     className={style.social}
-                                    href="https://drive.google.com/file/d/1HI6tna5YOVspn_lPmQGycFrLtUzFVNDr/view?usp=share_link"
+                                    href="https://drive.google.com/file/d/1VOlQyyddYvIMmfYZBsgmIoZnpPUpjKi9/view?usp=drive_link"
                                     target="___blank"
                                 >
                                     CV
@@ -44,8 +44,8 @@ export default function Footer() {
                     </div>
                 </div>
                 <div className={style.footerBottom}>
-                    <span>© 2023 Luis Canales. Todos los Derechos Reservados.</span>
-                    <span className={style.update}>Última actualización por Luis Canales en Marzo de 2024.</span>
+                    <span>© 2024 Luis Canales. Todos los Derechos Reservados.</span>
+                    <span className={style.update}>Última actualización por Luis Canales en Septiembre de 2024.</span>
                 </div>
             </div>
         </footer>
