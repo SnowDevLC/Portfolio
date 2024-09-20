@@ -89,12 +89,12 @@
 
 .textContent {
     flex-direction: column;
-    padding: 80px 56px 192px;
+    padding: 56px 56px 192px;
     text-decoration: none;
     display: flex;
     justify-content: space-around;
     align-items: stretch;
-    gap: 64px;
+    gap: 80px;
 }
 
 .title h1 {
@@ -102,7 +102,7 @@
     letter-spacing: -2px;
     text-shadow: 0 5px 10px rgba(0, 87, 255, 0.15), 0 -5px 10px rgba(255, 90, 0, 0.1),
         0 -5px 25px rgba(255, 255, 255, 0.3);
-    font-size: 60px;
+    font-size: 50px;
     font-weight: 500;
     line-height: 96%;
 }
@@ -373,13 +373,13 @@
         height: 696px;
     }
     .textContent {
-        gap: 80px;
-        padding: 96px 72px 200px;
+        gap: 120px;
+        padding: 65px 65px 192px;
     }
     .title h1 {
         letter-spacing: -1px;
-        font-size: 70px;
         font-weight: 600;
+        font-size: 60px;
     }
     .description h3 {
         font-size: 30px;
@@ -414,16 +414,16 @@
         padding: 12px;
     }
     .card {
-        height: 960px;
+        height: 860px;
         border-radius: 24px;
     }
     .textContent {
-        padding: 120px 88px 280px;
+        padding: 70px 70px 192px;
     }
     .title h1 {
         text-shadow: 0 5px 20px rgba(0, 87, 255, 0.2), 0 -5px 15px rgba(255, 90, 0, 0.15),
             0 0 30px rgba(255, 255, 255, 0.3);
-        font-size: 90px;
+        font-size: 75px;
     }
     .description h3 {
         font-size: 40px;

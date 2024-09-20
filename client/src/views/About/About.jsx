@@ -12,7 +12,7 @@ import {
   SiTypescript,
   SiJavascript,
   SiReact,
-  SiPhp
+  SiPhp,
 } from "react-icons/si";
 import { studies } from "../../assets/db.js";
 import style from "./About.module.css";
@@ -29,8 +29,8 @@ export default function About() {
               <div className={style.textContent}>
                 <div className={style.title}>
                   <h1>
-                    Desarrollo aplicaciones en JavaScript y React, utilizando bibliotecas de interfaz de usuario y
-                    Node.js para BackEnd.
+                    Creo aplicaciones web completas, desde el diseño de interfaces hasta el desarrollo de backends,
+                    asegurando soluciones funcionales y escalables para diversas necesidades.
                   </h1>
                 </div>
                 <div className={style.description}>
@@ -50,8 +50,8 @@ export default function About() {
             </div>
             <div className={style.title}>
               <h1>
-                Desarrollo aplicaciones en JavaScript y React, utilizando bibliotecas de interfaz de usuario y Node.js
-                para BackEnd.
+                Creo aplicaciones web completas, desde el diseño de interfaces hasta el desarrollo de backends,
+                asegurando soluciones funcionales y escalables para diversas necesidades.
               </h1>
             </div>
           </div>
@@ -95,8 +95,8 @@ export default function About() {
             <h3>ESTUDIOS</h3>
           </div>
           <div className={style.studiesContent}>
-            {studies?.map((study) => (
-              <div className={style.columns}>
+            {studies?.map((study, index) => (
+              <div className={style.columns} key={index}>
                 <h2>{study.institution}</h2>
                 <div className={style.descriptionBlock}>
                   <div className={style.position}>
